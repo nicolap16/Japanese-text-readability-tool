@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block content %}
+  <h1>This is where you can see the N1 vocab list</h1>
+  {% for word in words %}
+  <p>{{ word }} {{ word.word_id }} </p>
+  {% endfor %}
+{% endblock content %}  

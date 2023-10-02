@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+      <h1>Japanese Readability Tool</h1>
+      <!-- form from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_textarea 3rd May -->
+      <form> 
+        <!-- action="/action_page.php" -->
+        <p><label for="sourceText"> Input the Japanese text you would like analysed:</label></p>
+        <textarea id="sourceText" name="sourceText" rows="25" cols="100"></textarea>
+        <br>
+        <!-- JAVASCRIPT NEEDS TO BE LINKED -->
+        <input type="submit" value="Submit" onclick="validate()">
+      </form>
+      
+      <p>Click the "Submit" button and the Japanese text will be passed through the readability algorithm and a JLPT level will be returned.</p>
+
+
+{% endblock content %}
+
+<!-- layout.html is not being extended because
