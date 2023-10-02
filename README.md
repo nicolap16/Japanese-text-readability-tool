@@ -4,6 +4,8 @@
 
 This project is the ongoing development of my MSc Computing dissertation. It is the prototype of a web application that students can use to input Japanese text and then have its predicted Japanese Language Proficieny Test (JLPT) level returned.
 
+After creating a mini-corpus of texts labelled according to JLPT level, I created some algorithms to pre-process the text for machine learning (a particular challenge in Japanese). With the resulting feature extracted for each text in my corpus, I trained a language classification model using the Multinomial Naïve Bayes algorithm. I was then able to conduct basic testing to see that in theory the classification model works, though it requires a much larger set of training data in order to increase its accuracy. As it is, the prototype is as a command line tool, but I intend to develop it into a web application.
+
 ## Project Aims
 
 - To parse Japanese text and extract Chinese kanji characters, words and grammar points
