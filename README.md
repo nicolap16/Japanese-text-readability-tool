@@ -14,12 +14,14 @@ This project is the ongoing development of my MSc Computing dissertation. It is 
 
 ## Technologies Used
 
-- Programming Language: HTML, CSS, Javascript, Python
+- Programming Language: Python
 - Frameworks and Libraries: Flask, SQLAlchemy, Numpy, ScikitLearn, SudachiPy, Selenium
 
 ## Project Structure
 
-- `JLPT_classifier.py` - Script that 
+- `analysed_text.py` - Class containing methods to extract kanji, vocabulary and grammar from a given Japanese text.
+- `corpus.py` - Script to analyse all texts according to the variables above.
+- `JLPT_classifier.py` - Script that stores the classifier. Change test input here.
 - `j-readability_web_driver.py` - A web driver to validate classifier results against results from website j-Readability
 
 
